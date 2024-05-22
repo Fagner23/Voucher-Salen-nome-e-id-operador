@@ -1411,6 +1411,29 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     },
   },
 ];*/
+const ENDERECOS_MANIA = [
+  {
+    bairro: "Ponta Grossa",
+    endereco: "R. Fernandes Pinheiro, 260 - Centro, Ponta Grossa - PR, 84010-135",
+    pontoReferencia: "Ao lado da loja Utilidades - Presentes",
+    
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"09:00",
+      fim:"14:00",
+    },
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+]
+
 const ENDERECOS_Occlus = [
   {
     bairro: "Jardim Iguatemi",
@@ -1443,6 +1466,7 @@ SmartNew: ENDERECOS_Smart_New,
   GoldenMix2: ENCERECOS_GOLDEN_MIX_2,
   GoldenMix3: ENCERECOS_GOLDEN_MIX_3,
   GoldenMix4: ENCERECOS_GOLDEN_MIX_4,
+  MANIA: ENDERECOS_MANIA,
   Occlus : ENDERECOS_Occlus,
 
 };
