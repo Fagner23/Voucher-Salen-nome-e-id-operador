@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Agendamento de Consulta</title>
+  </head>
+  <body>
+    <div id="modalErroOverlay" class="hide-element"></div>
+    <aside id="modalErro" class="hide-element">
+      <span id="botaoFecharModal" onclick="fecharModalErro()">&times;</span>
+      <header>
+        <span>Um ou mais erros ocorreram!</span>
+      </header>
+      <section id="conteudoModalErro"></section>
+    </aside>
+    <section class="voucher-generation-container">
+      <fieldset>
+        <h4>Salen Solutions 👁️</h4>
+      </fieldset>
+      <form id="appointmentForm">
+        <div class="form-line">
+          <label for="name">Nome:</label>
+          <input type="name" id="name" required autocomplete="off" />
+        </div>
+        <div class="form-line">
+          <label for="contato">Contato </label>
+          <input type="tel" id="contato" required autocomplete="off" oninput="formatarTelefone(this)" />
+        </div>
+        <div class="form-line">
+          <label for="date">Data Agendada (voucher)</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="form-line">
+          <label for="time">Hora:</label>
+          <input type="time" id="time" required />
+        </div>
+        <div class="form-line">
+          <label for="otica">Otica:</label>
+          <select id="otica" name="otica"></select>
+        </div>
+        <div class="form-line">
+          <label for="local">Local:</label>
+          <select id="local" name="local"></select>
+        </div>
+        <div class="form-line">
+        <label for="Patologia">Patologia</label>
+        <select name="Patologia" id="Patologia" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label for="Atendimento">Data atendimento (Hoje):</label>
+        <input type="date" id="Atendimento" name= "Atendimento"required />
+      </div>
+
+        <div class="form-line">
+          <label for="nomeOperador">nome operador</label>
+          <input
+            type="nomeOperador"
+            id="nomeOperador"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-line">
+          <label for="idOperador">id operador</label>
+          <input
+            type="idOperador"
+            id="idOperador"
+            required
+            autocomplete="off"
+          />
+        </div>
+       
+        <div class="form-line generate-voucher">
+          <button type="button" onclick="generateVoucher();captureAndSave()">
+            Gerar Voucher
+          </button>
+        </div>
+      </form>
+      <section id="voucherMessage" class="hide-element"></section>
+      <h4>Central Visão Brasil👁️</h4>
+     
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.rawgit.com/eKoopmans/html2pdf/v0.9.2/dist/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+     <h5>Todos os direitos reservados</h5>
+  </body>
+</html>
