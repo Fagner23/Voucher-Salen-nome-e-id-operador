@@ -497,6 +497,29 @@ const ENDERECOS_GOLDEN_MIX = [
     },
   },
 
+//
+{
+  bairro: "Diadema Eldorado",
+  endereco: "Av. Nossa Sra. dos Navegantes, 804 - Eldorado, Diadema - SP, 09972-385",
+  pontoReferencia: " Ao lado da Ultrafarma",
+  
+  horarioAlmoco: {
+    inicio: "13:00",
+    fim: "14:00",
+
+  },
+  expedienteFimDeSemana:{
+    inicio:"09:00",
+    fim:"17:30",
+  },
+  
+  expedienteSemana: {
+    inicio: "09:00",
+    fim: "18:00",
+  },
+},
+
+
   /*{
     bairro: "Indaiá Itaqua",
     endereco: "R.Cap. José Leite, 44 - Centro,Itaquaquecetuba-SP,08570-030",
@@ -1451,6 +1474,51 @@ const ENDERECOS_Occlus = [
     },
   },
 ];
+const ENDERECOS_Videre = [
+  {
+    bairro: "Americana",
+    endereco: "Rua Doutor Vieira Bueno, 25- Centro de Americana",
+    pontoReferencia: "No Calçadão ao lado do chiquinho sorvetes",
+    
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"09:00",
+      fim:"15:00",
+    },
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+  },
+]
+
+const ENDERECOS_Lauren = [
+  {
+    bairro: "Santa Barbara D'Oeste",
+    endereco: "Rua General Osório,491- Centro, Santa Barbara D'Oeste",
+    pontoReferencia: "Em frente á loja CEM",
+    
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"09:00",
+      fim:"13:40",
+    },
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+  },
+]
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1467,6 +1535,8 @@ SmartNew: ENDERECOS_Smart_New,
   GoldenMix3: ENCERECOS_GOLDEN_MIX_3,
   GoldenMix4: ENCERECOS_GOLDEN_MIX_4,
   MANIA: ENDERECOS_MANIA,
+  Videre:ENDERECOS_Videre,
+  Lauren:ENDERECOS_Lauren,
   Occlus : ENDERECOS_Occlus,
 
 };
