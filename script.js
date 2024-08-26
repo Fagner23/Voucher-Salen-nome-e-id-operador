@@ -1,7 +1,8 @@
 
 const TICKET_TEMPLATE = `
 <section>
-    <header> Sua visita está AGENDADA, {{name}}!</header>
+    <header>
+     Sua visita está AGENDADA, {{name}}!</header>
     <section>
       <ul>
         <li>
@@ -327,7 +328,25 @@ const ENDERECOS_RAZA_RJ = [
       fim: "12:00",
     },
   },
+  {
+    bairro: "Espirito Santo",
+    endereco:
+      "Av. Central, 440 - Parque Res. Laranjeiras Serra - ES, 29165-130",
+
+    pontoReferencia:
+      "Ao lado do Banco Benestes - Em frente à loja Simonett",
+   
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
 ];
+
 
 const ENDERECOS_MIDAS = [
   {
@@ -604,7 +623,7 @@ const ENDERECOS_GOLDEN_MIX = [
       fim: "13:30",
     },
   },
-/*
+
   {
     bairro: "Cocaia",
     endereco:
@@ -623,7 +642,7 @@ const ENDERECOS_GOLDEN_MIX = [
       fim: "18:00",
     },
   },
-*/
+
   {
     bairro: " Tatui",
     endereco: " Rua Onze De Agosto, 462- Centro,Tatuí-SP,18270-001",
@@ -803,6 +822,24 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     expedienteFimDeSemana: {
       inicio: "09:00",
       fim: "15:00",
+    },
+  },
+  
+  {
+    bairro: "Sorocaba",
+    endereco: " Rua Barão do Rio Branco, 51 - Centro, Sorocaba - SP, 18010-170",
+    pontoReferencia: " De Frente Casas Bahia",},
+    /*horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "18:00",
     },
   },
 /*
@@ -1519,6 +1556,28 @@ const ENDERECOS_Lauren = [
     },
   },
 ]
+const ENDERECOS_Vimais = [
+  {
+    bairro: "Americana",
+    endereco: "Rua 12 novembro, 458 - Centro de Americana",
+    pontoReferencia: "Banco do Brasil, odonto company e restaurante Pomodoro",
+    
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"08:30",
+      fim:"12:00",
+    },
+    
+    expedienteSemana: {
+      inicio: "08:30",
+      fim: "15:30",
+    },
+  },
+]
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1538,6 +1597,7 @@ SmartNew: ENDERECOS_Smart_New,
   Videre:ENDERECOS_Videre,
   Lauren:ENDERECOS_Lauren,
   Occlus : ENDERECOS_Occlus,
+  Vimais :ENDERECOS_Vimais,
 
 };
 
