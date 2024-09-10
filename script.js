@@ -345,15 +345,15 @@ const ENDERECOS_RAZA_RJ = [
   {
     bairro: "Campo De Goycatazes 2",
     endereco:
-      "Rua 13 de Maio, 36 - Campo De Goytacazes - RJ",
+      " Rua 13 de Maio, 36 - Campo De Goytacazes - RJ" ,
     pontoReferencia:
-      " Em frente ao antigo Banco do Brasil",
+      "Em frente ao antigo Banco do Brasil ",
     horarioAlmoco: {
       inicio: "12:00",
-      fim: "13:30",
+      fim: "13:00",
     },
     expedienteSemana: {
-      inicio: "8:30",
+      inicio: "08:00",
       fim: "18:00",
     },
     expedienteFimDeSemana: {
@@ -361,6 +361,7 @@ const ENDERECOS_RAZA_RJ = [
       fim: "13:00",
     },
   },
+
 
   {
     bairro: "Espirito Santo",
