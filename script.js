@@ -1,6 +1,19 @@
 
 const TICKET_TEMPLATE = `
 <section>
+<h1 style="
+        text-align: center; 
+         
+        font-size: 36px; 
+        color: white; 
+        font-family: 'Georgia', serif; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+        border-bottom: 2px solid #b89b5e;
+        padding-bottom: 10px;
+        ">CUPOM</h1>
     <header>
      Sua visita está AGENDADA, {{name}}!</header>
     <section>
@@ -312,7 +325,7 @@ const ENDERECOS_RAZA_RJ = [
   {
     bairro: "Campo De Goycatazes",
     endereco:
-      "Av. Sete De Setembro 466 - Centro - Campo De Goytacazes - RJ - 28013332",
+      " Av. Sete De Setembro, 466 - Centro - Campo De Goytacazes  RJ " ,
     pontoReferencia:
       " Em frente da Caixa Econômica Federal- Calçadão de Campos",
     horarioAlmoco: {
@@ -328,6 +341,27 @@ const ENDERECOS_RAZA_RJ = [
       fim: "12:00",
     },
   },
+
+  {
+    bairro: "Campo De Goycatazes 2",
+    endereco:
+      "Rua 13 de Maio, 36 - Campo De Goytacazes - RJ",
+    pontoReferencia:
+      " Em frente ao antigo Banco do Brasil",
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:30",
+    },
+    expedienteSemana: {
+      inicio: "8:30",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "08:30",
+      fim: "13:00",
+    },
+  },
+
   {
     bairro: "Espirito Santo",
     endereco:
@@ -1578,6 +1612,29 @@ const ENDERECOS_Vimais = [
     },
   },
 ]
+
+const ENDERECOS_Fotica = [
+  {
+    bairro: "Santa Barbara D'Oeste",
+    endereco: "Rua General Osório, 528 - Centro, Santa Barbara D'Oeste",
+    pontoReferencia: "Em frente á loja CEM",
+    
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"10:00",
+      fim:"13:40",
+    },
+    
+    expedienteSemana: {
+      inicio: "10:00",
+      fim: "18:00",
+    },
+  },
+]
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1598,7 +1655,7 @@ SmartNew: ENDERECOS_Smart_New,
   Lauren:ENDERECOS_Lauren,
   Occlus : ENDERECOS_Occlus,
   Vimais :ENDERECOS_Vimais,
-
+  Fotica :ENDERECOS_Fotica
 };
 
 // FUNCOES AUXILIARES
