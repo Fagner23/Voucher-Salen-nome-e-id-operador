@@ -862,40 +862,25 @@ const ENCERECOS_GOLDEN_MIX_2 = [
   
   {
     bairro: "Sorocaba",
-    endereco: " Rua Barão do Rio Branco, 51 - Centro, Sorocaba - SP, 18010-170",
-    pontoReferencia: " De Frente Casas Bahia",},
-    /*horarioAlmoco: {
-      inicio: "13:00",
-      fim: "14:00",
-    },
-    expedienteSemana: {
-      inicio: "09:00",
-      fim: "18:00",
-    },
-    expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "18:00",
-    },
-  },
-/*
-  {
-    bairro: "Sorocaba",
-    endereco: "R.São Bento, 39-Centro, Sorocaba-SP,18010-030",
-    pontoReferencia: "Próximo Banco Brasil",
+    endereco: "Rua Barão do Rio Branco, 51 - Centro, Sorocaba - SP, 18010-170",
+    pontoReferencia: "Em frente a Sérgio Calçados",
+    
     horarioAlmoco: {
       inicio: "13:00",
       fim: "14:00",
     },
+    
     expedienteSemana: {
-      inicio: "09:00",
-      fim: "17:30",
+      inicio: "09:30",
+      fim: "18:00",
     },
     expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "14:00",
+      inicio: "08:30",
+      fim: "12:30",
     },
   },
-*/
+
+
   {
     bairro: " Itapetininga ",
     endereco: " R.Dr Campos Salles, 677-Centro,Itapetininga-SP-18200-005",
@@ -913,44 +898,8 @@ const ENCERECOS_GOLDEN_MIX_2 = [
       fim: "14:30",
     },
   },
-/*
-  {
-    bairro: "Pindamonhangaba",
-    endereco: "Dr Gustavo de Godoy, 41-  Centro Pindamonhangaba-SP,12400-040",
-    pontoReferencia:
-      "Mercado municipal de Pintamonhangaba e papelaria copiadora copyanet",
-    horarioAlmoco: {
-      inicio: "12:30",
-      fim: "13:30",
-    },
-    expedienteSemana: {
-      inicio: "09:00",
-      fim: "18:00",
-    },
-    expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "13:00",
-    },
-  },
 
-  {
-    bairro: " Jacarei",
-    endereco: " R.Dr. Lúcio Malta, 353-Centro, Jacarei-SP-12237-000",
-    pontoReferencia: " Mercadão Municipal",
-    horarioAlmoco: {
-      inicio: "13:00",
-      fim: "14:00",
-    },
-    expedienteSemana: {
-      inicio: "09:00",
-      fim: "17:30",
-    },
-    expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "14:00",
-    },
-  },
-  */
+
   {
     bairro: " Ribeirão Preto",
     endereco: " R.Americo Brasiliense, 557 - Centro Ribeirão",
