@@ -421,7 +421,7 @@ const ENDERECOS_STILE = [
       fim: "16:00",
     },
   },
-*/
+
   {
     bairro: "Praia Grande",
     endereco:
@@ -440,9 +440,9 @@ const ENDERECOS_STILE = [
       fim: "16:00",
     },
   },
-];
+];*/
 
-  /*{
+  {
     bairro: "Campinas",
     endereco: "Av.Francisco Glicério, 1103 - Centro Campinas",
     pontoReferencia: " Ao lado do Magazine Luiza",
@@ -456,11 +456,11 @@ const ENDERECOS_STILE = [
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "14:00",
+      fim: "15:00",
     },
   },
 ];
-*/
+
 /*
 const ENDERECOS_2_IRMAOS = [
   {
