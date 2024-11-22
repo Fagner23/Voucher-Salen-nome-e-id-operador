@@ -114,15 +114,19 @@ const ENDERECOS_LELLI = [
     endereco:
       "Av. Professor Luiz Ignácio Anhaia Mello, 1190 - Q.ta da Paineira, São Paulo - SP, 03154-000",
     pontoReferencia:
-      "Proximo a Droga Leste, em frente a praça que da acesso ao metro Vila Prudente",
+      "Entre smart fit e burguer king",
+      horarioAlmoco: {
+        inicio: "12:00",
+        fim: "13:00",
+      },
    
     expedienteSemana: {
-      inicio: "09:30",
-      fim: "17:00",
+      inicio: "10:00",
+      fim: "17:15",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "16:00",
+      fim: "15:00",
     },
   },
   /*
@@ -145,7 +149,7 @@ const ENDERECOS_LELLI = [
       fim: "15:00",
     },
   },
-  */
+  
   {
     bairro: "Ipiranga",
     endereco:
@@ -182,7 +186,7 @@ const ENDERECOS_LELLI = [
       inicio: "10:00",
       fim: "15:00",
     },
-  },
+  },*/
  /* 
   {
     bairro: "Republica",
@@ -209,7 +213,23 @@ const ENDERECOS_LELLI = [
       inicio: "10:00",
       fim: "15:30",
     },
-  },*/
+  }*/
+    
+      {
+        bairro: "Mogi das Cruzes",
+        endereco: "Rua Doutor Paulo Frontin, 15  CENTRO Complemento: Loja 2   CEP: 08710-050 ",
+        pontoReferencia: "Ao lado da loja TAKARA, e perto da loja BESNI",
+        horarioAlmoco: {
+          inicio: "13:00",
+          fim: "14:00",
+        },
+        expedienteSemana: {
+          inicio: "09:00",
+          fim: "18:45",
+        },
+    
+      },
+
 ];
 
 const ENDERECOS_PERCI = [
@@ -287,18 +307,18 @@ const ENCERECOS_ZAFF = [
   {
     bairro: "Macaé",
     endereco: "Av. Rui Barbosa 305 - Centro - Macae - RJ - 27910-362",
-    pontoReferencia: "Proximo a Loja Competição // Magazine Luiza",
+    pontoReferencia: "Próximo á Loja Competição / entre a Siticol e a Lojas Leader SAL ",
     horarioAlmoco: {
       inicio: "12:00",
       fim: "13:00",
     },
     expedienteSemana: {
-      inicio: "09:00",
-      fim: "18:30",
+      inicio: "09:20",
+      fim: "16:40",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "14:00",
+      fim: "13:15",
     },
   },
   {
@@ -350,15 +370,15 @@ const ENDERECOS_RAZA_RJ = [
       "Em frente ao antigo Banco do Brasil ",
     horarioAlmoco: {
       inicio: "12:00",
-      fim: "13:00",
+      fim: "13:30",
     },
     expedienteSemana: {
-      inicio: "08:00",
-      fim: "18:00",
+      inicio: "08:45",
+      fim: "17:45",
     },
     expedienteFimDeSemana: {
-      inicio: "08:30",
-      fim: "13:00",
+      inicio: "08:45",
+      fim: "12:30",
     },
   },
 
@@ -648,10 +668,13 @@ const ENDERECOS_GOLDEN_MIX = [
     bairro: "Salto",
     endereco: "Rua Nove de Julho, 180 -Centro,Salto -SP,133320-005",
     pontoReferencia: "Ao lado das Pernambucanas",
-   
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+    },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:30",
+      fim: "17:45",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
@@ -682,17 +705,14 @@ const ENDERECOS_GOLDEN_MIX = [
     bairro: " Tatui",
     endereco: " Rua Onze De Agosto, 462- Centro,Tatuí-SP,18270-001",
     pontoReferencia: " Ao lado da Sergio Calçado",
-    horarioAlmoco: {
-      inicio: "13:00",
-      fim: "14:00",
-    },
+ 
     expedienteSemana: {
       inicio: "09:00",
       fim: "18:00",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "15:30",
+      fim: "13:45",
     },
   },
 /*
@@ -758,11 +778,11 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:30",
+      fim: "17:100",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "15:00",
+      fim: "14:45",
     },
   },
 
@@ -771,16 +791,16 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     endereco: "R.Batista De Carvalho, 413- Quadra 4 centro Bauru Sp- 17010-0001",
     pontoReferencia: " em frente a Drogasil do calçadão Batista de Carvalho",
     horarioAlmoco:{
-     inicio: "13:00",
-    fim: "14:00",
+     inicio: "12:00",
+    fim: "13:00",
   },
     expedienteSemana: {
       inicio: "09:15",
-      fim: "17:45",
+      fim: "17:00",
     },
     expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "15:30",
+      inicio: "09:30",
+      fim: "15:10",
     },
   },
 
@@ -802,25 +822,25 @@ const ENCERECOS_GOLDEN_MIX_2 = [
       fim: "13:00",
     },
   },
-/*
+/**/
   {
     bairro: " Taubate",
     endereco: "  Praça Dom Epaminondas, 47-Centro, Taubate-SP, 12010-020",
-    pontoReferencia: " Praça Empaminondas",
+    pontoReferencia: " Ao Lado da Shoebez",
     horarioAlmoco: {
-      inicio: "12:30",
-      fim: "13:30",
+      inicio: "12:00",
+      fim: "13:00",
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:00",
+      fim: "16:45",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
       fim: "14:00",
     },
   },
-  */
+  
 
   {
     bairro: "Hortolandia",
@@ -905,8 +925,8 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     endereco: " R.Americo Brasiliense, 557 - Centro Ribeirão",
     pontoReferencia: " Ao Lado da sorveteria do JÔ muito antiga e tradicional da cidade",
     horarioAlmoco: {
-      inicio: "13:00",
-      fim: "14:00",
+      inicio: "12:30",
+      fim: "13:30",
     },
     expedienteSemana: {
       inicio: "09:00",
@@ -914,7 +934,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "14:00",
+      fim: "13:00",
     },
   },
 
@@ -1244,11 +1264,11 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       fim: "14:00",
     },
   },
-/*
+
   {
     bairro: "Itapevi",
     endereco:
-      "Av Rubens Caramez, 32 Cohab Itapevi",
+      " Av. Rubens Caramez, 32 - Centro, Itapevi - SP, 06653-005",
     pontoReferencia: "Proximo Da Farmacia Drogasil",
     horarioAlmoco: {
       inicio: "13:00",
@@ -1256,14 +1276,14 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:00",
+      fim: "18:00",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
       fim: "17:00",
     },
   },
-
+/*
   {
     bairro: " Suzano",
     endereco: "  Rua General Francisco Glicério, 405",
