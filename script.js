@@ -97,16 +97,16 @@ const ENDERECOS_LELLI = [
       "R. Maria Eugênia Célso, 35 - Parque Artur Alvim, São Paulo - SP, 03568-050",
     pontoReferencia: "Ragazzo/Rua Do Metrô",
     horarioAlmoco: {
-      inicio: "12:30",
-      fim: "13:30",
+      inicio: "13:00",
+      fim: "14:00",
     },
     expedienteSemana: {
-      inicio: "11:00",
-      fim: "18:00",
+      inicio: "11:15",
+      fim: "17:30",
     },
     expedienteFimDeSemana: {
       inicio: "10:00",
-      fim: "15:00",
+      fim: "14:45",
     },
   },
   {
@@ -309,8 +309,8 @@ const ENCERECOS_ZAFF = [
     endereco: "Av. Rui Barbosa 305 - Centro - Macae - RJ - 27910-362",
     pontoReferencia: "Próximo á Loja Competição / entre a Siticol e a Lojas Leader SAL ",
     horarioAlmoco: {
-      inicio: "12:00",
-      fim: "13:00",
+      inicio: "13:00",
+      fim: "14:00",
     },
     expedienteSemana: {
       inicio: "09:20",
@@ -353,12 +353,12 @@ const ENDERECOS_RAZA_RJ = [
       fim: "13:30",
     },
     expedienteSemana: {
-      inicio: "10:00",
-      fim: "17:00",
+      inicio: "08:00",
+      fim: "17:15",
     },
     expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "12:00",
+      inicio: "08:00",
+      fim: "13:00",
     },
   },
 
@@ -778,7 +778,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:100",
+      fim: "17:10",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
@@ -829,7 +829,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     pontoReferencia: " Ao Lado da Shoebez",
     horarioAlmoco: {
       inicio: "12:00",
-      fim: "13:00",
+      fim: "13:30",
     },
     expedienteSemana: {
       inicio: "09:00",
@@ -853,11 +853,11 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "18:00",
+      fim: "17:45",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "14:00",
+      fim: "13:40",
     },
   },
 
@@ -1113,7 +1113,7 @@ const ENCERECOS_GOLDEN_MIX_3 = [
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "16:00",
+      fim: "16:30",
     },
   },
 
@@ -1326,7 +1326,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     pontoReferencia: "Em frente a Magazine Luiza ",
     horarioAlmoco: {
       inicio: "12:00",
-      fim: "13:00",
+      fim: "13:30",
     },
     expedienteSemana: {
       inicio: "09:00",
@@ -1334,7 +1334,26 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
+      fim: "16:00",
+    },
+  },
+
+  {
+    bairro: "Jacarei ",
+    endereco:
+      "R. Dr. Lúcio Malta, 353 - Centro, Jacareí - SP, 12237-000",
+    pontoReferencia: "Do lado do mercadão municipal ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
       fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:30",
     },
   },
 /*
@@ -1426,6 +1445,8 @@ const ENCERECOS_GOLDEN_MIX_4 = [
 
  
 
+
+
 ];
 
 /*const ENDERECOS_Indaia = [
@@ -1467,11 +1488,11 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     },
     expedienteSemana: {
       inicio: "09:00",
-      fim: "17:30",
+      fim: "18:00",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "17:30",
+      fim: "17:00",
     },
   },
 ];*/
