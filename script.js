@@ -517,6 +517,24 @@ const ENDERECOS_STILE = [
       fim: "15:00",
     },
   },
+
+  {
+    bairro: "Santos",
+    endereco: "Av.Ana costa ,185 - Gonzaga, Santos - SP",
+    pontoReferencia: " Antigo Santander, Proximo a Maternidade São Lucas ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:50",
+    },
+  },
 ];
 
 /*
