@@ -400,10 +400,6 @@ const ENDERECOS_RAZA_RJ = [
       fim: "14:00",
     },
   },
-<<<<<<< HEAD
-=======
-
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
   {
     bairro: "RIO DAS OSTRAS",
     endereco:
@@ -411,11 +407,7 @@ const ENDERECOS_RAZA_RJ = [
 
     pontoReferencia:
       "Em frente a Rodoviária da 1001",
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
     expedienteSemana: {
       inicio: "09:00",
       fim: "18:30",
@@ -442,26 +434,6 @@ const ENDERECOS_MIDAS = [
     expedienteFimDeSemana: {
       inicio: "09:00",
       fim: "15:00",
-    },
-  },
-];
-
-const ENDERECOS_loja_Acaz = [
-  {
-    bairro: "SÃO BERNADO DO CAMPO",
-    endereco: "R. Dr. Fláquer, 209 - Travessa Da Marechal ",
-    pontoReferencia: " Ao lado do Matheus Presentes",
-    horarioAlmoco: {
-      inicio: "12:00",
-      fim: "13:00",
-    },
-    expedienteSemana: {
-      inicio: "09:00",
-      fim: "17:00",
-    },
-    expedienteFimDeSemana: {
-      inicio: "09:00",
-      fim: "16:00",
     },
   },
 ];
@@ -856,8 +828,8 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     fim: "13:00",
   },
     expedienteSemana: {
-      inicio: "09:00",
-      fim: "17:20",
+      inicio: "09:15",
+      fim: "17:00",
     },
     expedienteFimDeSemana: {
       inicio: "09:30",
@@ -1688,20 +1660,12 @@ const ENDERECOS_Fotica = [
   },
   
 ]
-<<<<<<< HEAD
-=======
-
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
 const ENDERECOS_acaz = [
   {
     bairro: "SÃO BERNADO DO CAMPO",
     endereco: "R. Dr. Fláquer, 209 - Travessa Da Marechal",
     pontoReferencia: "Ao lado do Matheus Presentes",
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
     horarioAlmoco: {
       inicio: "12:00",
       fim: "13:00",
@@ -1711,21 +1675,14 @@ const ENDERECOS_acaz = [
       inicio:"10:00",
       fim:"13:40",
     },
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
     expedienteSemana: {
       inicio: "09:00",
       fim: "17:00",
     },
   },
 ]
-<<<<<<< HEAD
 
-=======
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1746,16 +1703,10 @@ SmartNew: ENDERECOS_Smart_New,
   Lauren:ENDERECOS_Lauren,
   Occlus : ENDERECOS_Occlus,
   Vimais :ENDERECOS_Vimais,
-<<<<<<< HEAD
   acaz : ENDERECOS_acaz,
   Fotica :ENDERECOS_Fotica,
 
-}; 
-=======
-  Fotica :ENDERECOS_Fotica,
-  Acaz :ENDERECOS_loja_Acaz
-};
->>>>>>> ca6dfbc3ba9d8050d7a98b1a3e1fbf13dc0e70d2
+} 
 
 // FUNCOES AUXILIARES
 function deletarFilhosDoElemento(idElemento) {
@@ -1857,29 +1808,19 @@ const horarioEscolhidoDentroDeIntervalo = (
     inicioPermitido <= horarioEscolhido && horarioEscolhido <= finalPermitido
   );
 };
-/// atica horario almoco semana 
 
-
-
-
-
-//desativa horario de almoço aos sabados //
 const horaAgendamentoValido = ({ otica, local, date, time }) => {
   const localSelecionado = obterEnderecosOtica(otica, local);
 
   if (localSelecionado) {
     const dateAsObject = generateLocalDate(date);
 
-    // Verifica se é dia de semana antes de validar o horário de almoço
-    if (dataEhDiaDeSemana(dateAsObject)) {
-      if (
-        horarioEscolhidoDentroDeIntervalo(localSelecionado.horarioAlmoco, time)
-      ) {
-        return false;
-      }
+    if (
+      horarioEscolhidoDentroDeIntervalo(localSelecionado.horarioAlmoco, time)
+    ) {
+      return false;
     }
 
-    // Valida o expediente conforme o dia
     if (dataEhDiaDeSemana(dateAsObject)) {
       return horarioEscolhidoDentroDeIntervalo(
         localSelecionado.expedienteSemana,
@@ -1916,18 +1857,12 @@ const gerarErroHorarioAgendamento = ({ otica, local }) => {
       : `${endereco.expedienteFimDeSemana.inicio} - ${endereco.expedienteFimDeSemana.fim};`
   }`;
 
-  const today = new Date();
-  const isWeekend = today.getDay() === 0 || today.getDay() === 6; // 0 = Domingo, 6 = Sábado
-
-  if (!isWeekend) {
-    const liElement3 = document.createElement("li");
-    liElement3.textContent = `Almoço: ${
-      endereco.horarioAlmoco === null
-        ? "Não cadastrado"
-        : `${endereco.horarioAlmoco.inicio} - ${endereco.horarioAlmoco.fim};`
-    }`;
-    ulElement.appendChild(liElement3);
-  }
+  const liElement3 = document.createElement("li");
+  liElement3.textContent = `Almoço: ${
+    endereco.horarioAlmoco === null
+      ? "Não cadastrado"
+      : `${endereco.horarioAlmoco.inicio} - ${endereco.horarioAlmoco.fim};`
+  }`;
 
   ulElement.appendChild(liElement1);
   ulElement.appendChild(liElement2);
@@ -1939,7 +1874,6 @@ const gerarErroHorarioAgendamento = ({ otica, local }) => {
 
   exibirModalError(conteiner);
 };
-
 
 // FIM VALIDAÇOES DO FORMULÁRIO
 
