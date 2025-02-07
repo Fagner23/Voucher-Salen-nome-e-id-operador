@@ -400,9 +400,24 @@ const ENDERECOS_RAZA_RJ = [
       fim: "14:00",
     },
   },
+  {
+    bairro: "RIO DAS OSTRAS",
+    endereco:
+      "Rodovia Amaral Peixoto, 4472 Lojas A",
+
+    pontoReferencia:
+      "Em frente a Rodoviária da 1001",
+
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
 ];
-
-
 const ENDERECOS_MIDAS = [
   {
     bairro: "Bangu",
@@ -477,6 +492,24 @@ const ENDERECOS_STILE = [
     expedienteFimDeSemana: {
       inicio: "09:00",
       fim: "15:00",
+    },
+  },
+
+  {
+    bairro: "Santos",
+    endereco: "Av.Ana costa ,185 - Gonzaga, Santos - SP",
+    pontoReferencia: " Antigo Santander, Proximo a Maternidade São Lucas ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:50",
     },
   },
 ];
@@ -1625,7 +1658,31 @@ const ENDERECOS_Fotica = [
       fim: "18:00",
     },
   },
+  
 ]
+const ENDERECOS_acaz = [
+  {
+    bairro: "SÃO BERNADO DO CAMPO",
+    endereco: "R. Dr. Fláquer, 209 - Travessa Da Marechal",
+    pontoReferencia: "Ao lado do Matheus Presentes",
+
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+
+    },
+    expedienteFimDeSemana:{
+      inicio:"10:00",
+      fim:"13:40",
+    },
+
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+]
+
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1646,8 +1703,10 @@ SmartNew: ENDERECOS_Smart_New,
   Lauren:ENDERECOS_Lauren,
   Occlus : ENDERECOS_Occlus,
   Vimais :ENDERECOS_Vimais,
-  Fotica :ENDERECOS_Fotica
-};
+  acaz : ENDERECOS_acaz,
+  Fotica :ENDERECOS_Fotica,
+
+}; 
 
 // FUNCOES AUXILIARES
 function deletarFilhosDoElemento(idElemento) {
@@ -1927,7 +1986,7 @@ function formatarTelefone(input) {
       // (XX) XXXX-XXXX
       input.value = '(' + numeroTelefone.substring(0, 2) + ') ' + numeroTelefone.substring(2, 6) + '-' + numeroTelefone.substring(6);
   }
-  
+
 }
 
 function formataData() {
@@ -1993,13 +2052,13 @@ function getFormData() {
       idOperador,
       Patologia,
       Atendimento
-      
-      
+
+
   };
 }
 // Adicione esta função para enviar os dados para o formulário SheetMonkey
 
-  
+
   function sendFormData(formData) {
     // Verifique se todos os campos estão preenchidos
     if (
