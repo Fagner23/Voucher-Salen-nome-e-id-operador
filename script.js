@@ -1706,7 +1706,7 @@ SmartNew: ENDERECOS_Smart_New,
   acaz : ENDERECOS_acaz,
   Fotica :ENDERECOS_Fotica,
 
-} 
+}; 
 
 // FUNCOES AUXILIARES
 function deletarFilhosDoElemento(idElemento) {
@@ -2094,4 +2094,4 @@ function getFormData() {
       // Alguns campos estão vazios, exiba uma mensagem de erro
       console.error('Erro: Preencha todos os campos antes de enviar os dados.');
     }
-  }
+  };
