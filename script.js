@@ -129,8 +129,8 @@ const ENDERECOS_LELLI = [
       fim: "15:00",
     },
   },
-  /*
-
+  
+/*
   {
     bairro: "Vila Maria",
     endereco:
@@ -302,7 +302,7 @@ const ENDERECOS_VENICE = [
     },
   },
 ];
-
+/*
 const ENCERECOS_ZAFF = [
   {
     bairro: "Macaé",
@@ -340,9 +340,9 @@ const ENCERECOS_ZAFF = [
   },
 
 ];
-
-const ENDERECOS_RAZA_RJ = [
-  {
+*/
+const ENDERECOS_RAZA = [
+/*  {
     bairro: "Campo De Goycatazes",
     endereco:
       " Av. Sete De Setembro, 466 - Centro - Campo De Goytacazes  RJ " ,
@@ -381,7 +381,7 @@ const ENDERECOS_RAZA_RJ = [
       fim: "12:30",
     },
   },
-
+*/
 
   {
     bairro: "Espirito Santo",
@@ -411,6 +411,42 @@ const ENDERECOS_RAZA_RJ = [
     expedienteSemana: {
       inicio: "09:00",
       fim: "18:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
+
+  {
+    bairro: "Cariacica ",
+    endereco:
+      "Av. Expedito Garcia, 49 - Campo Grande, Cariacica - ES, 29020-290",
+
+    pontoReferencia:
+      "",
+
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
+
+  {
+    bairro: "RAZA BH ",
+    endereco:
+      "Av. Paraná, 170 - Centro - BH",
+
+    pontoReferencia:
+      "",
+
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
@@ -1336,7 +1372,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
     },
   },
 */
-  {
+/*  {
     bairro: "Frei Gaspar",
     endereco:
       " Rua Frei Gaspar, 726 - Centro",
@@ -1389,7 +1425,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       fim: "15:30",
     },
   },
-/*
+
   {
     bairro: "Itaquaquecetuba",
     endereco: "Praça Dos Expedicionários, 44 - Centro",
@@ -1422,7 +1458,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       fim: "16:50",
     },
   },
-*/
+
   {
     bairro: "Parelheiros",
     endereco: "Estrada da Colônia, 232 - Jd Novo Parelheiros - 0489-2000",
@@ -1440,7 +1476,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       inicio: "09:00",
       fim: "16:30",
     },
-  },
+  },*/
 /*
   {
     bairro: " Álvares Machado",
@@ -1456,7 +1492,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       fim: "15:30",
     },
   },
-*/
+
   {
     bairro: " Jd. Angela",
     endereco: " Estrada do M.Boi Mirim, 4005- 04935-053",
@@ -1473,7 +1509,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
       inicio: "09:00",
       fim: "16:15",
     },
-  },
+  },*/
   
 
  
@@ -1684,27 +1720,27 @@ const ENDERECOS_acaz = [
 ]
 
 const OTICAS_ENDERECOS = {
-  Benetti: ENDERECOS_BENETTI,
-  Lelli: ENDERECOS_LELLI,
-  Perci: ENDERECOS_PERCI,
-  Zaff: ENCERECOS_ZAFF,
-  RazaRJ: ENDERECOS_RAZA_RJ,
-  Venice: ENDERECOS_VENICE,
-  Midas: ENDERECOS_MIDAS,
-  Stile: ENDERECOS_STILE,
-SmartNew: ENDERECOS_Smart_New,
- // DoisIrmaos: ENDERECOS_2_IRMAOS,
+  //Benetti: ENDERECOS_BENETTI,
+  //Lelli: ENDERECOS_LELLI,
+  //Perci: ENDERECOS_PERCI,
+  //Zaff: ENCERECOS_ZAFF,
+  Raza: ENDERECOS_RAZA,
+ // Venice: ENDERECOS_VENICE,
+  //Midas: ENDERECOS_MIDAS,
+  //Stile: ENDERECOS_STILE,
+//SmartNew: ENDERECOS_Smart_New,
+// DoisIrmaos: ENDERECOS_2_IRMAOS,
   GoldenMix: ENDERECOS_GOLDEN_MIX,
   GoldenMix2: ENCERECOS_GOLDEN_MIX_2,
   GoldenMix3: ENCERECOS_GOLDEN_MIX_3,
-  GoldenMix4: ENCERECOS_GOLDEN_MIX_4,
+  //GoldenMix4: ENCERECOS_GOLDEN_MIX_4,
   MANIA: ENDERECOS_MANIA,
-  Videre:ENDERECOS_Videre,
-  Lauren:ENDERECOS_Lauren,
-  Occlus : ENDERECOS_Occlus,
-  Vimais :ENDERECOS_Vimais,
-  acaz : ENDERECOS_acaz,
-  Fotica :ENDERECOS_Fotica,
+ // Videre: ENDERECOS_Videre,
+  //Lauren:ENDERECOS_Lauren,
+  //Occlus: ENDERECOS_Occlus,
+  //Vimais:ENDERECOS_Vimais,
+  //acaz: ENDERECOS_acaz,
+  //Fotica: ENDERECOS_Fotica,
 
 }; 
 
