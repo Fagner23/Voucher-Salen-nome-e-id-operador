@@ -302,11 +302,11 @@ const ENDERECOS_VENICE = [
     },
   },
 ];
-/*
+
 const ENCERECOS_ZAFF = [
   {
     bairro: "Macaé",
-    endereco: "Av. Rui Barbosa 305 - Centro - Macae - RJ - 27910-362",
+    endereco: "Av. Rui Barbosa 305 Centro Macae RJ " ,
     pontoReferencia: "Próximo á Loja Competição / entre a Siticol e a Lojas Leader SAL ",
     horarioAlmoco: {
       inicio: "13:00",
@@ -321,6 +321,7 @@ const ENCERECOS_ZAFF = [
       fim: "13:15",
     },
   },
+  
   {
     bairro: "Cabo Frio",
     endereco: "R. Érico Coelho, 140 Centro, Cabo Frio - RJ",
@@ -340,7 +341,7 @@ const ENCERECOS_ZAFF = [
   },
 
 ];
-*/
+
 const ENDERECOS_RAZA = [
 /*  {
     bairro: "Campo De Goycatazes",
@@ -1723,7 +1724,7 @@ const OTICAS_ENDERECOS = {
   //Benetti: ENDERECOS_BENETTI,
   //Lelli: ENDERECOS_LELLI,
   //Perci: ENDERECOS_PERCI,
-  //Zaff: ENCERECOS_ZAFF,
+  Zaff:ENCERECOS_ZAFF,
   Raza: ENDERECOS_RAZA,
  // Venice: ENDERECOS_VENICE,
   //Midas: ENDERECOS_MIDAS,
