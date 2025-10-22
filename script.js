@@ -340,12 +340,12 @@ const ENCERECOS_ZAFF = [
 ];
 
 const ENDERECOS_RAZA = [
-/*  {
+  {
     bairro: "Campo De Goycatazes",
     endereco:
-      " Av. Sete De Setembro, 466 - Centro - Campo De Goytacazes  RJ " ,
+      " Av. Sete De Setembro, 488 - Centro - Campo De Goytacazes  RJ " ,
     pontoReferencia:
-      " Em frente da Caixa Econômica Federal- Calçadão de Campos",
+      "  Caixa Econômica Federal",
     horarioAlmoco: {
       inicio: "12:00",
       fim: "13:30",
@@ -360,6 +360,26 @@ const ENDERECOS_RAZA = [
     },
   },
 
+   {
+    bairro: "São jose dos Campos/SP",
+    endereco:
+      " Av.Mal Floriano Peixoto, 188 - Centro - São José dos Campos - SP " ,
+    pontoReferencia:
+      "",
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:30",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "08:00",
+      fim: "13:00",
+    },
+  },
+/*
   {
     bairro: "Campo De Goycatazes 2",
     endereco:
