@@ -1,0 +1,237 @@
+/* === Estilo Tech-Corporativo === */
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #5db2d6;
+  --primary-hover: #0ea5e9;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #334155;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.voucher-generation-container {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Logo */
+.header-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header-logo img {
+  
+  width: 190px;
+  filter: drop-shadow(0 0 6px rgb(3, 196, 245));
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+
+}
+
+/* Fieldset */
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+legend {
+  padding: 0 10px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Inputs */
+.form-line {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+input, select {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #0f172a;
+  color: var(--text);
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+input:focus, select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+/* Botão */
+.generate-voucher button {
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.generate-voucher button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+footer p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Modal */
+#modalErroOverlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+#modalErro {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--card);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 1001;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  animation: fadeIn 0.4s ease;
+}
+#modalErro header {
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--primary);
+}
+#conteudoModalErro {
+  font-size: 14px;
+  color: var(--text);
+}
+#botaoFecharModal {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+.hide-element { display: none; }
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .voucher-generation-container {
+    padding: 15px;
+  }
+}
+
+/* === MODAL PROFISSIONAL === */
+#modalErroOverlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+#modalErro {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px 20px;
+  width: 90%;
+  max-width: 420px;
+  z-index: 1001;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  animation: modalIn 0.35s ease forwards;
+}
+
+/* Header do modal */
+#modalErro header {
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Conteúdo */
+#conteudoModalErro {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Botão fechar */
+#botaoFecharModal {
+  position: absolute;
+  top: 12px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+#botaoFecharModal:hover {
+  color: #ef4444; /* vermelho elegante */
+  transform: rotate(90deg);
+}
+
+/* Animações */
+@keyframes modalIn {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.85); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+

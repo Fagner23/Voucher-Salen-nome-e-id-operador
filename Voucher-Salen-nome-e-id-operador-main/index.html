@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento de Consulta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Modal de erro -->
+  <div id="modalErroOverlay" class="hide-element"></div>
+  <aside id="modalErro" class="hide-element">
+    <span id="botaoFecharModal" onclick="fecharModalErro()">&times;</span>
+    <header>
+      <h2>⚠️ Erro de Validação</h2>
+    </header>
+    <section id="conteudoModalErro"></section>
+  </aside>
+
+  <!-- Container principal -->
+  <section class="voucher-generation-container">
+    <header class="header-logo">
+      <img src="img/salen_solutions_logo-removebg-preview.png" alt="Logo Salen Solutions" />
+
+    </header>
+
+    <form id="appointmentForm">
+      <!-- Dados do Cliente -->
+      <fieldset>
+        <legend>👤 Dados do Cliente</legend>
+        <div class="form-line">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" placeholder="Digite o nome completo" required autocomplete="off" /> 
+        </div>
+        <div class="form-line">
+          <label for="contato">Contato:</label autocomplete="off">
+          <input type="tel" id="contato" placeholder="(99) 99999-9999" required oninput="formatarTelefone(this)" autocomplete="off"/>
+        </div>
+        <div class="form-line">
+          <label for="Patologia">Patologia:</label>
+          <select id="Patologia" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Dados do Agendamento -->
+      <fieldset>
+        <legend>📅 Agendamento</legend>
+        <div class="form-line">
+          <label for="date">Data Agendada:</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="form-line">
+          <label for="time">Hora:</label>
+          <input type="time" id="time" required />
+        </div>
+        <div class="form-line">
+          <label for="otica">Ótica:</label>
+          <select id="otica" required>
+            <option value="" disabled selected>Selecione</option>
+          </select>
+        </div>
+        <div class="form-line">
+          <label for="local">Local:</label>
+          <select id="local" required>
+            <option value="" disabled selected>Selecione</option>
+          </select>
+        </div>
+        <div class="form-line">
+          <label for="Atendimento">Data de Atendimento:</label>
+          <input type="date" id="Atendimento" required />
+        </div>
+      </fieldset>
+
+      <!-- Dados do Operador -->
+      <fieldset>
+        <legend>💻 Operador</legend>
+        <div class="form-line">
+          <label for="nomeOperador">Nome:</label autocomplete="off">
+          <input type="text" id="nomeOperador" placeholder="Digite seu nome" required autocomplete="off"/>
+        </div>
+        <div class="form-line">
+          <label for="idOperador">ID:</label>
+          <input type="text" id="idOperador" placeholder="Digite o ID" required autocomplete="off"/>
+        </div>
+      </fieldset>
+
+      <!-- Botão -->
+      <div class="form-line generate-voucher">
+        <button type="button" onclick="generateVoucher();captureAndSave()">
+          🚀 Gerar Voucher
+        </button>
+      </div>
+    </form>
+
+    <section id="voucherMessage" class="hide-element"></section>
+
+    <footer>
+      <p>Central Visão Brasil 👁️</p>
+      <small>Todos os direitos reservados ©</small>
+    </footer>
+  </section>
+
+  <!-- Script para data de atendimento = hoje -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hoje = new Date().toISOString().split("T")[0];
+      document.getElementById("Atendimento").value = hoje;
+    });
+  </script>
+
+  <!-- Bibliotecas -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Seu script -->
+  <script src="script.js"></script>
+</body>
+</html>
